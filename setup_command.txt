@@ -1,0 +1,25 @@
+sudo apt update
+sudo apt upgrade
+ls
+gcc --version
+git --version
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+wget -O code-latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./code-latest.deb
+rm code-latest.deb
+code 
+git --version
+git config --global user.name asib27
+git config --global user.email asib.rahman1927@gmail.com
+git config --global init.defaultBranch main
+git config --global color.ui auto
+git config --global pull.rebase false
+git config --get user.name
+ls ~/.ssh/id_ed25519.pub
+ssh-keygen -t ed25519 -C asib.rahman1927@gmail.com
+cat ~/.ssh/id_ed25519.pub
+ls
+rm google-chrome-stable_current_amd64.deb 
+ls
+history -w history.txt
